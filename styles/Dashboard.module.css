@@ -1,0 +1,100 @@
+.dashboardContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 2rem 0;
+}
+
+.dashboardTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #3730a3;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.taskFormCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(55,48,163,0.08);
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+.taskListCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(55,48,163,0.08);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+.taskItem:hover {
+  box-shadow: 0 2px 8px rgba(55,48,163,0.10);
+}
+
+.taskTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3730a3;
+}
+
+.taskMeta {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.taskActions button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.taskActions button:hover {
+  background: #3730a3;
+}
+
+.editInput, .editTextarea, .editDate {
+  padding: 0.5rem;
+  border: 1px solid #c7d2fe;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .taskFormCard, .taskListCard {
+    padding: 1rem;
+  }
+  .dashboardTitle {
+    font-size: 2rem;
+  }
+}
